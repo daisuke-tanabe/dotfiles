@@ -1,4 +1,9 @@
-export PATH=/usr/local/bin:$PATH
-export PATH=$HOME/.nodebrew/current/bin:$PATH
-export PATH=/usr/local/Cellar/git/2.14.2/bin:$PATH
-export PATH=/usr/local/opt/ruby/bin:$PATH
+# zshenvの設定より優先されるのでpath_helperを呼び出さないようにする
+setopt no_global_rcs
+
+# path_helperを呼び出さないようにしたことでusr/local/binが足りなくなるので追記
+PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
+
+# anyenv
+export PATH=$HOME/.anyenv/bin:$PATH
+eval "$(anyenv init -)"

@@ -1,12 +1,14 @@
 # パスを通す
-export PATH=/usr/local/bin:$PATH
-export PATH=$HOME/.nodebrew/current/bin:$PATH
+# export PATH="$HOME/.anyenv/bin:$PATH"
+# eval "$(anyenv init -)"
+# export PATH=/usr/local/bin:$PATH
+# export PATH=$HOME/.nodebrew/current/bin:$PATH
 # export PATH=/usr/local/Cellar/git/2.14.2/bin:$PATH
-export PATH=/usr/local/opt/ruby/bin:$PATH
-export PATH=$HOME/.rbenv/bin:$PATH
-export GOPATH=$HOME/Workspace/go
-export PATH=$PATH:$GOPATH/bin
-eval "$(rbenv init -)"
+# export PATH=/usr/local/opt/ruby/bin:$PATH
+# export PATH=$HOME/.rbenv/bin:$PATH
+# export GOPATH=$HOME/Workspace/go
+# export PATH=$PATH:$GOPATH/bin
+# eval "$(rbenv init -)"
 
 # 環境変数
 export LANG=ja_JP.UTF-8
